@@ -17,6 +17,7 @@ private:
 public:
     void insert(IdentifierNode& identifierNode);
     void updateByNode(const IdentifierNode& identifierNode);
+    void removeByNode(const IdentifierNode& identifierNode);
 
     IdentifierNode& findByName(const string& name);
 };
