@@ -12,6 +12,10 @@ private:
     float _value;
 public:
     IdentifierNode(const string& name, float value);
+
+    const string& getName() const;
+    float getValue() const;
+    void setValue(float value);
 };
 
 
