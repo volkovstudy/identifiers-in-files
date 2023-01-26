@@ -4,6 +4,8 @@
 
 #include <list>
 #include <string>
+#include <stdexcept>
+#include <sstream>
 
 #include "identifier-node/IdentifierNode.h"
 
