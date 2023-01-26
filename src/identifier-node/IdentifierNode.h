@@ -16,6 +16,9 @@ public:
     const string& getName() const;
     float getValue() const;
     void setValue(float value);
+
+    bool operator==(const IdentifierNode& rhs) const;
+    bool operator!=(const IdentifierNode& rhs) const;
 };
 
 
