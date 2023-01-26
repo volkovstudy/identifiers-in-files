@@ -3,6 +3,7 @@
 
 
 #include <list>
+#include <string>
 
 #include "identifier-node/IdentifierNode.h"
 
@@ -11,6 +12,8 @@ using namespace std;
 class DynamicList {
 private:
     list<IdentifierNode> _list;
+public:
+    IdentifierNode& findByName(const string& name);
 };
 
 
