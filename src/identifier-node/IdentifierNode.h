@@ -10,6 +10,8 @@ class IdentifierNode {
 private:
     string _name;
     float _value;
+public:
+    IdentifierNode(const string& name, float value);
 };
 
 
