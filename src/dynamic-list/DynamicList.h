@@ -2,7 +2,15 @@
 #define IDENTIFIERS_IN_FILES_DYNAMICLIST_H
 
 
+#include <list>
+
+#include "identifier-node/IdentifierNode.h"
+
+using namespace std;
+
 class DynamicList {
+private:
+    list<IdentifierNode> _list;
 };
 
 
