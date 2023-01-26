@@ -9,6 +9,7 @@ using namespace std;
 class IdentifierNode {
 private:
     string _name;
+    float _value;
 };
 
 
