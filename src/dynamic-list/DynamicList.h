@@ -16,6 +16,7 @@ private:
     list<IdentifierNode> _list;
 public:
     void insert(IdentifierNode& identifierNode);
+    void updateByNode(const IdentifierNode& identifierNode);
 
     IdentifierNode& findByName(const string& name);
 };
