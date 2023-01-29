@@ -19,6 +19,10 @@ const DynamicList& IdentifiersManager::getList() const {
     return _list;
 }
 
+void IdentifiersManager::setList(const DynamicList& list) {
+    _list = list;
+}
+
 IdentifiersManager::~IdentifiersManager() {
     list<string> nodes;
     for (const IdentifierNode& node: _list.getList()) {

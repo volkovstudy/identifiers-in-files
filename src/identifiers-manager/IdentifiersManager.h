@@ -16,6 +16,7 @@ public:
     void initializeList();
 
     const DynamicList& getList() const;
+    void setList(const DynamicList& list);
 
     ~IdentifiersManager();
 };
