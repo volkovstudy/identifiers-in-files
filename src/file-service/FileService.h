@@ -1,0 +1,9 @@
+#ifndef IDENTIFIERS_IN_FILES_FILESERVICE_H
+#define IDENTIFIERS_IN_FILES_FILESERVICE_H
+
+
+class FileService {
+};
+
+
+#endif
