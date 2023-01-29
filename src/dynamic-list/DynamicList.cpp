@@ -33,3 +33,12 @@ void DynamicList::removeByNode(const IdentifierNode& identifierNode) {
         }
     }
 }
+
+void DynamicList::removeByName(const string& name) {
+    for (const IdentifierNode& node: _list) {
+        if (node.getName() == name) {
+            _list.remove(node);
+            break;
+        }
+    }
+}
