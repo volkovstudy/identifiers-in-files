@@ -1,0 +1,9 @@
+#ifndef IDENTIFIERS_IN_FILES_IDENTIFIERPARSER_H
+#define IDENTIFIERS_IN_FILES_IDENTIFIERPARSER_H
+
+
+class IdentifierParser {
+};
+
+
+#endif
