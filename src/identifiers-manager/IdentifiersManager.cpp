@@ -14,3 +14,7 @@ void IdentifiersManager::initializeList() {
         _list.insert(node);
     }
 }
+
+const DynamicList& IdentifiersManager::getList() const {
+    return _list;
+}

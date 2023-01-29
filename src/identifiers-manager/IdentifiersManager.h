@@ -14,6 +14,8 @@ public:
     IdentifiersManager(const string& filePath);
 
     void initializeList();
+
+    const DynamicList& getList() const;
 };
 
 
