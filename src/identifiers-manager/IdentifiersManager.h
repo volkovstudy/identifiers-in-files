@@ -9,6 +9,8 @@ class IdentifiersManager {
 private:
     FileService _fileService;
     DynamicList _list;
+public:
+    IdentifiersManager(const string& filePath);
 };
 
 
