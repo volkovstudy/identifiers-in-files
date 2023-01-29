@@ -4,6 +4,7 @@
 
 #include "file-service/FileService.h"
 #include "dynamic-list/DynamicList.h"
+#include "identifier-parser/IdentifierParser.h"
 
 class IdentifiersManager {
 private:
@@ -11,6 +12,8 @@ private:
     DynamicList _list;
 public:
     IdentifiersManager(const string& filePath);
+
+    void initializeList();
 };
 
 
