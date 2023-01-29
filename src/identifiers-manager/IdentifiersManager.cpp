@@ -18,3 +18,13 @@ void IdentifiersManager::initializeList() {
 const DynamicList& IdentifiersManager::getList() const {
     return _list;
 }
+
+IdentifiersManager::~IdentifiersManager() {
+    list<string> nodes;
+    for (const IdentifierNode& node: _list.getList()) {
+        string line = IdentifierParser::toString(node);
+        nodes.push_back(line);
+    }
+
+    _fileService.rewrite(nodes);
+}
