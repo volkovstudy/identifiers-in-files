@@ -2,7 +2,10 @@
 #define IDENTIFIERS_IN_FILES_FILESERVICE_H
 
 
+#include <fstream>
+
 #include <string>
+#include <list>
 
 using namespace std;
 
@@ -11,6 +14,8 @@ private:
     string _filePath;
 public:
     explicit FileService(const string& filePath);
+
+    list<string> readAllLines();
 };
 
 
