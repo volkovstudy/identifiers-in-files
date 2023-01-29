@@ -28,3 +28,10 @@ IdentifierNode& IdentifierParser::parse(const string& line) {
 
     return *node;
 }
+
+string IdentifierParser::toString(const IdentifierNode& node) {
+    stringstream line;
+    line << node.getName() << " " << node.getValue();
+
+    return line.str();
+}

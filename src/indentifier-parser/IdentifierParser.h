@@ -13,6 +13,7 @@ private:
     static vector<string> split(const string& line, char delimiter);
 public:
     static IdentifierNode& parse(const string& line);
+    static string toString(const IdentifierNode& node);
 };
 
 
