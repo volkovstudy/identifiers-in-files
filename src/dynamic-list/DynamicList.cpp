@@ -7,7 +7,7 @@ void DynamicList::insert(IdentifierNode& identifierNode) {
 void DynamicList::updateByNode(const IdentifierNode& identifierNode) {
     for (IdentifierNode& node: _list) {
         if (node.getName() == identifierNode.getName()) {
-            auto newValue = node.getValue();
+            auto newValue = identifierNode.getValue();
             node.setValue(newValue);
         }
     }
