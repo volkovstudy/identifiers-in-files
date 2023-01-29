@@ -26,14 +26,6 @@ IdentifierNode& DynamicList::findByName(const string& name) {
     throw runtime_error(message.str());
 }
 
-void DynamicList::removeByNode(const IdentifierNode& identifierNode) {
-    for (const IdentifierNode& node: _list) {
-        if (node.getName() == identifierNode.getName()) {
-            _list.remove(node);
-        }
-    }
-}
-
 void DynamicList::removeByName(const string& name) {
     for (const IdentifierNode& node: _list) {
         if (node.getName() == name) {
