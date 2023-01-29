@@ -16,6 +16,7 @@ public:
     explicit FileService(const string& filePath);
 
     list<string> readAllLines();
+    void rewrite(list<string> values);
 };
 
 

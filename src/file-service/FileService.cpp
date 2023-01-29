@@ -17,3 +17,13 @@ list<string> FileService::readAllLines() {
 
     return fileContent;
 }
+
+void FileService::rewrite(list<string> values) {
+    ofstream outputStream(_filePath);
+
+    for (const string& value: values) {
+        outputStream << value << endl;
+    }
+
+    outputStream.close();
+}
