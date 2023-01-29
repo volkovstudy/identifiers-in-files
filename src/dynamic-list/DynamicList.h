@@ -20,6 +20,8 @@ public:
     void removeByName(const string& name);
 
     IdentifierNode& findByName(const string& name);
+
+    const list<IdentifierNode>& getList() const;
 };
 
 

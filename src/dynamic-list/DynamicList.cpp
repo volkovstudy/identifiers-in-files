@@ -34,3 +34,7 @@ void DynamicList::removeByName(const string& name) {
         }
     }
 }
+
+const list<IdentifierNode>& DynamicList::getList() const {
+    return _list;
+}
